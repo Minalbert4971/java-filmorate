@@ -12,6 +12,7 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = AfterDateValidator.class)
 public @interface AfterDate {
+
     String message() default "Date must be after the specified date";
 
     Class<?>[] groups() default {};
